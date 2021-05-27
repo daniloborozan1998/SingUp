@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-image: url(https://cdn.hipwallpaper.com/i/45/23/WKbQMt.jpg); */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* box-sizing: border-box; */
+    font-family: fantasy;
+}
+
+.menuBar {
+    background-color: rgba(255, 255, 255, 0.753);
+    text-align: right;
+    /* overflow: hidden; */
+    position: fixed;
+    width: 100%;
+}
+
+.menuBar ul {
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.menuBar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.menuBar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menuBar ul li:hover {
+    background-color: rgba(23, 23, 170, 0.377);
+    border-radius: 15px;
+}
+
+.menuBar .fas {
+    margin-right: 8px;
+}
+
+.dropDown {
+    display: none;
+}
+
+.menuBar ul li:hover .dropDown {
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.835);
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.menuBar ul li:hover .dropDown ul {
+    display: block;
+    margin: 10px;
+}
+
+.menuBar ul li:hover .dropDown ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    text-align: left;
+}
+
+.menuBar p {
+    display: flex;
+    justify-self: left;
+    font-size: xx-large;
+    position: relative;
+    top: 40px;
+    left: 160px;
+}
+
+#firstImage {
+    /* width: 1920px; */
+    height: 800px;
+}
+
+.description {
+    color: rgb(212, 186, 39);
+    font-size: xx-large;
+    font-family: cursive;
+    width: max-content;
+    position: absolute;
+    bottom: 300px;
+    left: 200px;
+}
+
+.title {
+    float: left;
+}

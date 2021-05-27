@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/login.css">
+    <title>Log in</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="menuBar">
+        <p>INROOM PREVIEW</p>
+        <ul>
+
+            <li> <a href="./index.html"><i class="fas fa-home"></i>Home</a> </li>
+            <li> <a href="#"><i class="fas fa-shoe-prints"></i>How it Works </a></li>
+            <li> <a href="#"><i class="fas fa-user-plus"></i>Join us </a>
+                <div class="dropDown">
+                    <ul>
+                        <li> <a href="./logIn.html">Log In</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li> <a href="#"><i class="fas fa-address-card"></i>About us </a></li>
+            <li>
+                <a href="#"> <i class="fas fa-phone-alt"></i>Contact</a>
+            </li>
+            <li>
+                <a href="#"> <i class="fas fa-paint-brush"></i>Create now </a>
+            </li>
+        </ul>
+    </div>
+    <img id="firstImage" src="https://images.unsplash.com/photo-1541367777708-7905fe3296c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1372&q=80" alt="img" width="100%">
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <div class="container" id="container">
+                    <div class="form-container sign-up-container">
+
+                        <form action="">
+                            <h1>Create Account</h1>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="social"><i class="fab fa-google"></i></a>
+                                <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <span>or use your email for registration</span>
+                            <input type="text" name="name" id="username" placeholder="Enter your name" minlength="2" maxlength="25" required>
+                            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                            <input type="password" name="password" id="pw" placeholder="Enter Your Password" minlength="6" maxlength="16" required>
+                            <div class="social-container gender">
+                                <input type="radio" id="genderChoice" name="contact" value="male" required>
+                                <label for="genderChoice1" class="contactChoice1">Male</label>
+
+                                <input type="radio" id="genderChoice" name="contact" value="female" required>
+                                <label for="genderChoice2" class="contactChoice2">Female</label>
+
+                                <input type="radio" id="genderChoice" name="contact" value="other" required>
+                                <label for="genderChoice3" class="contactChoice3">Other</label>
+                            </div>
+                            <div class="social-container work">
+                                <label for="work">Choose a work:</label>
+                                <select id="work" name="work" required>
+                                    <option value="Photographer">Photographer</option>
+                                    <option value="Artist">Artist</option>
+                                    
+                                </select>
+                            </div>
+
+
+                            <button id="submitSingUp" type="submit">SignUp</button>
+
+                        </form>
+
+                    </div>
+                    <div class="form-container sign-in-container">
+                        <form action="#">
+                            <h1>Log In</h1>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="social"><i class="fab fa-google"></i></a>
+                                <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <span>or use your account</span>
+                            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                            <input type="password" name="password" id="pw" placeholder="Enter Your Password" required>
+                            <a href="#" class="forgot">Forgot Your Password</a>
+
+                            <button id="submitSingIn" type="submit">Log In</button>
+                        </form>
+                    </div>
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <div class="overlay-panel overlay-left">
+                                <h1>Welcome Back!</h1>
+                                <p class="singInParagraf">To keep connected with us please login with your personal info</p>
+                                <button class="ghost" id="signIn">Sign In</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                                <h1>Hello, Friend!</h1>
+                                <p>Enter your details and start journey with us</p>
+                                <button class="ghost" id="signUp">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/login.js"></script>
+</body>
+
+</html>
